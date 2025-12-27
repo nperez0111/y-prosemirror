@@ -120,6 +120,8 @@ export class SyncPluginState {
 
   #mutex = mux.createMutex()
 
+  #paused = false
+
   /**
    * @param {Y.XmlFragment} ytype
    * @param {Y.AbstractAttributionManager} attributionManager
@@ -137,6 +139,9 @@ export class SyncPluginState {
    * @private
    */
   applyTr (tr) {
+    if (this.#paused) {
+      return this
+    }
     console.log('apply', tr, 'has-meta', tr.getMeta(ySyncPluginKey))
     if (tr.getMeta(ySyncPluginKey)) {
       const { transactions } = /** @type {{ transactions: Array<Transaction> }} */ (tr.getMeta(ySyncPluginKey))
@@ -323,6 +328,32 @@ export class SyncPluginState {
         }
       }
     })
+  }
+
+  pauseSync () {
+    this.#paused = true
+    this.ytype.unobserveDeep(this.#onYTypeEvent)
+  }
+
+  resumeSync () {
+    this.#paused = false
+    this.ytype.observeDeep(this.#onYTypeEvent)
+    this.#init()
+  }
+
+  /**
+   * @param {Y.Snapshot} snapshot
+   */
+  previewSnapshot (snapshot) {
+    if (!this.#paused) {
+      this.pauseSync()
+    }
+    const initialPDelta = nodeToDelta(this.#view.state.doc)
+    const d = deltaAttributionToFormat(this.ytype.getContent(this.#attributionManager, { deep: true, snapshot }), this.#mapAttributionToMark)
+    const initDelta = delta.diff(initialPDelta.done(), d)
+    const tr = deltaToPSteps(this.#view.state.tr, initDelta.done())
+    tr.setMeta(ySyncPluginKey, { snapshot: true })
+    this.#view.dispatch(tr)
   }
 }
 
