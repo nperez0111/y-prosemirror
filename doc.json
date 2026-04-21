@@ -1,0 +1,7169 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Cover Page"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Project Title:"
+        },
+        {
+          "type": "text",
+          "text": " "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Enhancing Neural Plasticity Through Multi-Modal Interventions in Aging Adults: A Randomized Controlled Trial"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Principal Investigator (PI):"
+        },
+        {
+          "type": "text",
+          "text": " [Your Name, PhD]"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Institution:"
+        },
+        {
+          "type": "text",
+          "text": " [Your University or Research Center]"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Funding Mechanism:"
+        },
+        {
+          "type": "text",
+          "text": " NIH R01 Research Project Grant"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Proposed Project Period:"
+        },
+        {
+          "type": "text",
+          "text": " 24 months"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Total Direct Costs Requested:"
+        },
+        {
+          "type": "text",
+          "text": " ["
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "inlineThread",
+              "attrs": {
+                "_hash": null,
+                "data-thread-id": "9063ae0d-3f53-4d16-abfc-aa10651d57f7"
+              }
+            }
+          ],
+          "text": "To be determined"
+        },
+        {
+          "type": "text",
+          "text": "]"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Keywords:"
+        },
+        {
+          "type": "text",
+          "text": " Cognitive giaging, nueral plasticity, fMRI, EEG, cognitive trianang, physical exercise, nutritional supplementation"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Collaborating Institutions:"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "[Institution A] – Neuroimaging Core"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "[Institution B] – Exercise Physiology Unit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "[Institution C] – Nutrition and Metabolm Laboratory"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Contact Information:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Email: "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "link",
+              "attrs": {
+                "_hash": null,
+                "href": "mailto:aslam.hafizuddin@example.com",
+                "target": "_blank",
+                "rel": "noopener noreferrer nofollow",
+                "class": null,
+                "title": null
+              }
+            }
+          ],
+          "text": "tiptap@example.com"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Phone: +1 777-9999-8888"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Address: Jl. Merpati No. 24, Kelurahan Menteng, Avendix 10340, Pluto"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Table of Contents"
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "attrs": {
+        "_hash": null,
+        "start": 1,
+        "type": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Cover Page"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Table of Contents"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Project Summary / Overview"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Specific Aims"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Background and Significance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Preliminary Studies / Rationale"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Theoretical Framework"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Research Design Overview"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Participants and Recruitment"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Intervention Components"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Measurement and Assessment Tools"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Data Collection and Quality Control"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Abstract"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Statistical Analysis Plan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Timeline and Milestones"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Expected Outcomes and Potential Pitfalls"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Innovation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Broader Impacts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Budget and Resoeures"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "References and Appendices"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Project Summary / Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Project Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Age-related cognitive decline is one of the most pressing public health challenges of the 21st century. As populations age globally, the burden of dementia, mild cognitive impairment, and associated healthcare costs continues to rise. Current pharmaceutical interventions have yielded limited success, often targeting symptoms rather than underlying neural mechanisms. In contrast, lifestyle-based, non-pharmacological approaches—such as cognitive training, physical activity, and dietary supplementation—offer promising, low-risk, and sustainable strategies for enhancing neuroplasticity and preserving cognitive function in aging adults."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This project proposes a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "24-month randomized controlled trial (RCT)"
+        },
+        {
+          "type": "text",
+          "text": " designed to test the synergistic effects of a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "multi-modal intervention"
+        },
+        {
+          "type": "text",
+          "text": " integrating (1) adaptive cognitive training, (2) structured aerobic exercise, and (3) targeted nutritional supplementation. We hypothesize that these three modalittteis, when combined, will yield greater improvements in neural connectivity and cognitive performance than when implemented individually."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Scientific Rationale"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Emerging research indicates that cognitive training enhances task-specific neural efficiency (Smith et al., 2022), aerobic exercise promotes angiogenesis and hippocampal volume maintenance (Erickson et al., 2019), and nutritional supplementation—particularly omega-3 fatty acids, B-vitamins, and vitamin D—supports myelination and synaptic repair (Witte et al., 2014). Yet, few studies have rigorously examined these modalities in a combined, longitudinal RCT framework with neuroimaging endpoints."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "By integrating these approaches, this study will address key questions:"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Can multi-modal interventions reverse or stabilize biomarkers of neural plasticity in older adults?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "How do improviment in neural plasticity correlate with measurable cognitive gains?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Are there age-dependent thresholds for intervention efficacy?"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Specific Aims"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Aim 1: Establish baseline neural plasticity biomarkers across three aging cohorts (60–70, 70–80, 80+)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We will recruit 420 participants across three clinical research centers. Using multimodal neuroimaging (fMRI and EEG), we will idenfity age-related patterns of neural plasticity decline. Key biomarkers include resting-state functional connectivity, EEG coherence in fronto-parietal networks, and serum BDNF levels."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Hypothesis:"
+        },
+        {
+          "type": "text",
+          "text": " Older cohorts (80+) will exhibit significantly reduced plasticity markers, but maintain capacity for modulation through targeted interventions."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Aim 2: Evaluate the efficacy of a combined cognitive, exercise, and nutritional intervention protocol."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Participants will be randomly assigned to one of four groups:"
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "attrs": {
+        "_hash": null,
+        "start": 1,
+        "type": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Cognitive training only"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Exercise only"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Nutrition only"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Combined multi-modal intervention"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Each participant will engage in the assigned protocol for 24 months, with periodic cognitive assessments and neuroimaging every six months."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Hypothesis:"
+        },
+        {
+          "type": "text",
+          "text": " The combined intervention will produce the largest effect size in neural connectivity, executive function, and memory outcomes."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Aim 3: Quantify longitudinal changes in neural and cognitive function and model mediating mechanisms."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We will employ advanced statistical modeling (latent growth curve, mixed-effects modeling) to examine causal relationships between behavioral adherence, biomarker changes, and cognitive improvements."
+        },
+        {
+          "type": "hardBreak"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Background and Significance"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Epidemiology of Cognitive Decline"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "By 2050, the global population aged ≥ 65 years is expected to exceed 1.5 billion, with approximately 15–20 % experiencing measurable cognitive impairment (Prince et al., 2022). Age-related cognitive decline manifests as deterioration in executive function, working memory, and processing speed—domains underpinned by reduced neural connectivity and synaptic plasticity. Pharmacological interventions (e.g., cholinesterase inhibitors) have demonstrated limited efficacy, often providing temporary symptomatic relief without addressing underlying neuronal degeneration (Birks & Harvey, 2018)."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Neural Plasticity and Aging"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Neural plasticity—the brain’s capacity to reorganize and form new connections—declines with age due to reduced neurogenesis, myelin degradation, and mitochondrial dysfunction (Burke & Barnes, 2020). Functional MRI studies show decreased resting-state connectivity in the default-mode and fronto-parietal networks, correlating with memory deficits (Andrews-Hanna et al., 2007). Yet, evidence suggests that neuroplasticity can be re-stimulated through enriched environments, aerobic activity, and cognitive challenge (Voss et al., 2013)."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Gaps in the Literature"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "While numerous trials examine single interventions, few integrate "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "multi-modal approaches"
+        },
+        {
+          "type": "text",
+          "text": " targeting complementary biological and cognitive systems. Meta-analyses indicate moderate improvements in cognition from exercise alone (Colcombe & Kramer, 2003) and cognitive training alone (Lampit et al., 2014), but their combined effect remains under-explored, particularly with neuroimaging validation. Thus, this study directly addresses a critical translational gap: "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "how synergistic behavioral interventions influence neural plasticity trajectories in older adults."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Preliminary Studies / Rationale"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Pilot Data"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Our multidisciplinary team previously conducted a 12-month pilot (n = 60, ages 65–75) comparing cognitive training ± exercise. Preliminary results showed a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "15 % improvement in MoCA scores"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "increased hippocampal volume (2.3 %)"
+        },
+        {
+          "type": "text",
+          "text": " in the combined-intervention group relative to controls. Serum BDNF increased by ~ 18 %, supporting the hypothesized biological mediation (unpublished data, 2023)."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Feasibility"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Recruitment and retention exceeded expectations (dropout < 10 %). Participants demonstrated high adherence to digital cognitive training sessions (median 93 %), confirming logistical feasibility for the proposed R01 expansion across three clinical sites. Institutional MRI and EEG facilities have standardized acquisition pipelines, ensuring reproducibility and centralized quality control."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Rationale for Multi-Modal Integration"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Each intervention modality acts on partially distinct, yet overlapping, mechanisms of neural plasticity:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "ModalityPrimary MechanismKey Neural ImpactCognitive TrainingSynaptic strengthening, prefrontal efficiencyExecutive network integrationAerobic ExerciseAngiogenesis, BDNF up-regulationHippocampal volume, vascular integrityNutritional SupportAnti-inflammatory, membrane fluidityEnhanced neuronal repair and signaling"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The rationale stems from the "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "convergence hypothesis"
+        },
+        {
+          "type": "text",
+          "text": ": coupling behavioral, physical, and nutritional stimuli may produce additive—or even multiplicative—effects on brain resilience (Ngandu et al., 2015)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Theoretical Framework"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Conceptual Model"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The project is grounded in a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Neuroplasticity Systems Framework (NSF)"
+        },
+        {
+          "type": "text",
+          "text": " proposing that cognitive engagement, physical activity, and nutritional sufficiency collectively modulate synaptic signaling through three interconnected biological pathways:"
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "attrs": {
+        "_hash": null,
+        "start": 1,
+        "type": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Neurotrophic Pathway"
+                },
+                {
+                  "type": "text",
+                  "text": " – activity-dependent up-regulation of BDNF and IGF-1 supporting dendritic growth;"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Vascular–Metabolic Pathway"
+                },
+                {
+                  "type": "text",
+                  "text": " – aerobic exercise–induced angiogenesis enhancing oxygen and glucose delivery;"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Anti-Inflammatory Pathway"
+                },
+                {
+                  "type": "text",
+                  "text": " – nutrient-mediated reduction in oxidative stress preserving neuronal membranes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "These pathways converge to sustain "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "functional connectivity"
+        },
+        {
+          "type": "text",
+          "text": " within the hippocampal–prefrontal circuit, critical for memory and executive control."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Behavioral–Neural Coupling"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Empirical models indicate that improvements in task-specific accuracy correlate with increased fMRI activation efficiency rather than gross activation volume (Lustig et al., 2009). The current framework posits that behavioral gains from training will map onto measurable neuroimaging signatures—namely, enhanced network efficiency and reduced intra-network noise."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Age Cohort Hypothesis"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We hypothesize a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "non-linear, age-modulated response"
+        },
+        {
+          "type": "text",
+          "text": ", wherein the 60–70 cohort demonstrates the highest plastic potential, the 70–80 group shows attenuated yet significant improvement, and the 80 + group exhibits maintenance or slowed decline. Identifying this threshold is essential for developing age-tailored public-health interventions."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Research Design Overview"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Study Design"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "A "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "24-month, multi-site randomized controlled trial"
+        },
+        {
+          "type": "text",
+          "text": " employing a 3 (age cohort) × 4 (intervention group) factorial design. Participants (N = 420) will be stratified by age and baseline cognitive status (normal vs mild impairment)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Groups:"
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "attrs": {
+        "_hash": null,
+        "start": 1,
+        "type": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Cognitive Training only"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Aerobic Exercise only"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Nutritional Supplementation only"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Combined Multi-Modal Intervention"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Assessment Schedule:"
+        },
+        {
+          "type": "text",
+          "text": " baseline, 6 mo, 12 mo, 18 mo, 24 mo."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Intervention Overview"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Cognitive Training:"
+                },
+                {
+                  "type": "text",
+                  "text": " adaptive digital platform, 45 min × 3 sessions/week, targeting executive control, dual-tasking, and working-memory updating."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Aerobic Exercise:"
+                },
+                {
+                  "type": "text",
+                  "text": " supervised treadmill or cycling, moderate intensity (60–70 % HRmax), 30 min × 5 sessions/week, monitored via wearable trackers."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Nutritional Supplementation:"
+                },
+                {
+                  "type": "text",
+                  "text": " daily administration of 1 g omega-3 EPA/DHA, 800 IU vitamin D3, and B-vitamin complex; compliance verified by plasma markers."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Control and Blinding"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Single-blind design: outcome assessors unaware of group assignments. The nutrition and exercise arms will include matched placebo or light-stretch control activities to reduce expectancy bias."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Participants and Recruitment"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Target Population"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We will enroll "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "420 community-dwelling adults"
+        },
+        {
+          "type": "text",
+          "text": " aged 60 to 90 years, distributed evenly across three cohorts:"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Cohort 1:"
+                },
+                {
+                  "type": "text",
+                  "text": " Ages 60–70 (n = 140)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Cohort 2:"
+                },
+                {
+                  "type": "text",
+                  "text": " Ages 70–80 (n = 140)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Cohort 3:"
+                },
+                {
+                  "type": "text",
+                  "text": " Ages 80+ (n = 140)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Participants will be screened via medical history, cognitive evaluation, and physician clearance for exercise. Recruitment will occur through senior centers, community clinics, and aging-research registries at three collaborating institutions."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Inclusion Criteria"
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "attrs": {
+        "_hash": null,
+        "start": 1,
+        "type": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Age ≥ 60 years"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "MMSE ≥ 24 (no dementia)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Physically able to engage in moderate exercise"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Willingness to adhere to 24-month program and follow-up"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Exclusion Criteria"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Diagnosed neurodegenerative disorder (e.g., Parkinson’s, AD)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Major psychiatric illness or recent stroke"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Uncontrolled hypertension or cardiac disease"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Current use of nootropic medications or high-dose supplements overlapping study compounds"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Recruitment Strategies"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Community outreach events and informational sessions"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Partnerships with primary-care providers"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Media campaigns and social-media outreach targeted at older adults"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Intervention Components"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "1. Adaptive Cognitive Training"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "A tablet-based program featuring progressively challenging tasks in memory updating, task-switching, and inhibitory control."
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Frequency:"
+                },
+                {
+                  "type": "text",
+                  "text": " 3 sessions/week (45 min each)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Platform:"
+                },
+                {
+                  "type": "text",
+                  "text": " custom app with cloud-synced progress tracking"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Adaptivity:"
+                },
+                {
+                  "type": "text",
+                  "text": " difficulty adjusts every 5 sessions based on accuracy > 80 %"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Supervision:"
+                },
+                {
+                  "type": "text",
+                  "text": " weekly remote check-ins by trained facilitators"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Expected outcome:"
+        },
+        {
+          "type": "text",
+          "text": " enhanced prefrontal efficiency and improved executive control scores."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "2. Aerobic Exercise Protocol"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Type:"
+                },
+                {
+                  "type": "text",
+                  "text": " treadmill walking or stationary cycling"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Intensity:"
+                },
+                {
+                  "type": "text",
+                  "text": " 60–70 % of age-predicted HR max, verified via wearable heart-rate monitors"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Duration:"
+                },
+                {
+                  "type": "text",
+                  "text": " 30 min/session, 5× per week"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Supervision:"
+                },
+                {
+                  "type": "text",
+                  "text": " two center-based sessions weekly + three home sessions logged electronically"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Progression:"
+                },
+                {
+                  "type": "text",
+                  "text": " graded load every 4 weeks (+5 % intensity)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Expected outcome:"
+        },
+        {
+          "type": "text",
+          "text": " increased hippocampal volume, elevated BDNF, and improved cardiovascular fitness."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Measurement and Assessment Tools"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Primary Outcome Domains"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Neural Plasticity:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "This domain will be assessed using two primary measures. First, "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "resting-state fMRI"
+        },
+        {
+          "type": "text",
+          "text": " will evaluate BOLD connectivity patterns within the hippocampal and prefrontal networks. Measurements will occur at baseline, 12 months, and 24 months. Second, "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "EEG coherence"
+        },
+        {
+          "type": "text",
+          "text": " will be recorded to examine theta (θ) and alpha (α) band synchronization across frontal-parietal sites, with assessments conducted every six months."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Cognitive Function:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Global cognitive performance will be assessed using standardized tests such as the "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Mini-Mental State Examination (MMSE)"
+        },
+        {
+          "type": "text",
+          "text": " and the "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Montreal Cognitive Assessment (MoCA)"
+        },
+        {
+          "type": "text",
+          "text": ", administered from baseline through 24 months. Additionally, an "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "executive function battery"
+        },
+        {
+          "type": "text",
+          "text": "—including the Stroop task, n-back test, Trail Making Test, and Digit Span—will be conducted every six months to evaluate higher-order cognitive control and working memory."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Biological Measures:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Serum biomarkers including "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Brain-Derived Neurotrophic Factor (BDNF)"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Insulin-like Growth Factor 1 (IGF-1)"
+        },
+        {
+          "type": "text",
+          "text": ", and "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "C-reactive Protein (CRP)"
+        },
+        {
+          "type": "text",
+          "text": " will be quantified using ELISA assays to monitor neurotrophic and inflammatory processes. Samples will be collected at baseline, 12 months, and 24 months."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Secondary Outcomes"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Mood and Affect:"
+                },
+                {
+                  "type": "text",
+                  "text": " Measured using the "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Geriatric Depression Scale (GDS)"
+                },
+                {
+                  "type": "text",
+                  "text": " to assess depressive symptoms."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Sleep Quality:"
+                },
+                {
+                  "type": "text",
+                  "text": " Evaluated through the "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Pittsburgh Sleep Quality Index (PSQI)"
+                },
+                {
+                  "type": "text",
+                  "text": " to determine changes in sleep patterns."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Physical Fitness:"
+                },
+                {
+                  "type": "text",
+                  "text": " Assessed using "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "VO₂ max"
+                },
+                {
+                  "type": "text",
+                  "text": " testing and the "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "6-Minute Walk Test"
+                },
+                {
+                  "type": "text",
+                  "text": " to measure cardiovascular and functional endurance."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Data Collection and Quality Control"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Data Collection Workflow"
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "attrs": {
+        "_hash": null,
+        "start": 1,
+        "type": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Enrollment:"
+                },
+                {
+                  "type": "text",
+                  "text": " screening → consent → baseline assessment"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Randomization:"
+                },
+                {
+                  "type": "text",
+                  "text": " stratified block algorithm via central server"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Intervention Tracking:"
+                },
+                {
+                  "type": "text",
+                  "text": " attendance + digital logs uploaded weekly"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Follow-up Assessments:"
+                },
+                {
+                  "type": "text",
+                  "text": " every 6 months for neurocognitive and biological markers"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Exit Interview:"
+                },
+                {
+                  "type": "text",
+                  "text": " qualitative feedback and compliance review"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Quality Control Procedures"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Neuroimaging QC:"
+                },
+                {
+                  "type": "text",
+                  "text": " independent technician review of raw images for motion artifact < 2 mm."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "EEG QC:"
+                },
+                {
+                  "type": "text",
+                  "text": " automatic artifact rejection (± 100 µV), blind rater verification."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Cognitive QC:"
+                },
+                {
+                  "type": "text",
+                  "text": " duplicate scoring on 10 % of tests (ICC > 0.90 required)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Nutrition QC:"
+                },
+                {
+                  "type": "text",
+                  "text": " periodic lab validation of supplement composition and storage integrity."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Data Integrity and Monitoring"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "A Data Safety and Monitoring Board (DSMB) comprising neuroimaging, biostatistics, and gerontology experts will review progress semi-annually. Any adverse events will be reported within 48 hours per NIH guidelines. All code and analysis scripts will be version-controlled (GitHub Enterprise server) to ensure reproducibility."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "ABSTRACT"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Background:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Age-related cognitive decline affects approximately 15% of adults over 65, with neural plasticity markers showing consistent deterioration patterns across multiple brain regions. While current interventions focus primarily on pharmaceutical approaches, emerging evidence suggests multi-modal interventions combining cognitive training, physical exercise, and targeted nutritional supplementation may offer synergistic benefits."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Objectives:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "This R01 proposal aims to (1) establish baseline neural plasticity biomarkers across three age cohorts (60–70, 70–80, 80+), (2) implement a randomized controlled trial of a novel multi-modal intervention protocol, and (3) quantify changes in both neural and cognitive function markers over a 24-month period. We hypothesize that combined intervention strategies will demonstrate superior outcomes compared to single-modality approaches."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Methods:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "We will recruit 420 participants across three sites, stratified by age and baseline cognitive function scores. The intervention combines:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "(a) adaptive cognitive training (3× weekly, 45 minutes),"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "(b) moderate-intensity aerobic exercise (5× weekly, 30 minutes), and"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "(c) targeted nutritional supplementation (Omega-3, B-vitamins, vitamin D)."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Primary outcomes include fMRI-measured neural plasticity markers, EEG coherence patterns, and standardized cognitive assessments (MMSE, MoCA, custom executive function battery)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Significance:"
+        },
+        {
+          "type": "text",
+          "text": " This study addresses a critical gap in understanding optimal intervention timing and composition for protecting cognitive function in aging populations. Results will inform clinical practice guidelines and establish evidence-based protocols for community-level implementation."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Statistical Analysis Plan"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "All analyses will follow an "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "intention-to-treat (ITT)"
+        },
+        {
+          "type": "text",
+          "text": " framework to preserve randomization integrity. Missing data will be handled via multiple imputation using chained equations. Statistical significance will be set at "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "p < 0.05"
+        },
+        {
+          "type": "text",
+          "text": ", adjusted for multiple comparisons using the "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Benjamini–Hochberg procedure"
+        },
+        {
+          "type": "text",
+          "text": " to control the false discovery rate."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Primary Analysis"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We will evaluate changes in primary outcomes (fMRI connectivity, EEG coherence, cognitive scores) across time and between intervention arms using "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "linear mixed-effects models (LMMs)"
+        },
+        {
+          "type": "text",
+          "text": " with random intercepts for subjects and fixed effects for time, group, and time × group interactions:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Yijt=β0+β1(Groupj)+β2(Timet)+β3(Groupj×Timet)+ui+εijtY_{ijt} = β_0 + β_1(Group_j) + β_2(Time_t) + β_3(Group_j × Time_t) + u_i + ε_{ijt}Yijt​=β0​+β1​(Groupj​)+β2​(Timet​)+β3​(Groupj​×Timet​)+ui​+εijt​"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "where uiu_iui​ represents participant-level random effects. Model fit will be assessed via Akaike Information Criterion (AIC) and likelihood ratio tests."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Covariates: age cohort, sex, education, baseline fitness, and site."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Effect sizes will be expressed as "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Cohen’s d"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "partial η²"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Secondary Analyses"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Between-Cohort Comparisons:"
+                },
+                {
+                  "type": "text",
+                  "text": " Repeated-measures ANOVA to test differential responsiveness across age groups (60–70 vs. 70–80 vs. 80+)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Adherence Effects:"
+                },
+                {
+                  "type": "text",
+                  "text": " Correlation and regression analyses linking intervention adherence to outcome magnitude (e.g., number of training sessions vs. MoCA gain)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Biomarker Mediation Models:"
+                },
+                {
+                  "type": "text",
+                  "text": " Path analysis using structural equation modeling (SEM) to evaluate whether BDNF, IGF-1, or CRP changes mediate cognitive improvements."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Timeline and Milestones"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Project Duration: 24 Months"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The study will span two years and will proceed through "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "five structured phases"
+        },
+        {
+          "type": "text",
+          "text": ", each designed to ensure smooth execution, data integrity, and timely reporting."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Phase 1: Preparation and Staff Training (Months 1–3)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "During the initial phase, the research team will finalize the complete study protocol, secure institutional ethics approvals, and conduct staff training to ensure consistent methodology across all sites. Pilot testing for participant recruitment will also occur in this stage."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Deliverables:"
+        },
+        {
+          "type": "text",
+          "text": " Institutional Review Board (IRB) approval and finalized Standard Operating Procedures (SOPs)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Phase 2: Recruitment and Baseline Assessments (Months 4–8)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This phase will involve screening and enrolling "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "420 participants"
+        },
+        {
+          "type": "text",
+          "text": " across all research sites. Baseline data collection will include neuroimaging, cognitive testing, and biological sampling."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Deliverables:"
+        },
+        {
+          "type": "text",
+          "text": " Completion of participant enrollment and a locked baseline dataset."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Phase 3: Intervention Implementation (Months 9–20)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Participants will receive the multi-modal intervention protocol—comprising cognitive training, exercise routines, and nutritional supplementation—over a 12-month period. Mid-point assessments at 12 months will evaluate adherence and interim outcomes."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Deliverables:"
+        },
+        {
+          "type": "text",
+          "text": " Intervention adherence rate exceeding "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "85%"
+        },
+        {
+          "type": "text",
+          "text": " and a comprehensive mid-point progress report."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Phase 4: Post-Intervention Assessments (Months 21–23)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "After completing the intervention, all participants will undergo final assessments, including neuroimaging, biomarker assays, and cognitive evaluations."
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Deliverables:"
+        },
+        {
+          "type": "text",
+          "text": " Completion of all endpoint assessments and a finalized dataset for analysis."
+        }
+      ]
+    },
+    {
+      "type": "horizontalRule",
+      "attrs": {
+        "_hash": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 4
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Expected Outcomes and Potential Pitfalls"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Expected Outcomes"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Enhanced Neural Plasticity:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Participants receiving the combined cognitive, exercise, and nutritional interventions are expected to demonstrate significantly improved neural plasticity. This will manifest as increased "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "hippocampal–prefrontal functional connectivity"
+        },
+        {
+          "type": "text",
+          "text": " on resting-state fMRI, greater "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "EEG coherence"
+        },
+        {
+          "type": "text",
+          "text": " across frontal-parietal regions, and elevated serum "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Brain-Derived Neurotrophic Factor (BDNF)"
+        },
+        {
+          "type": "text",
+          "text": " levels compared to control groups."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Improved Cognitive Function:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "The intervention group is anticipated to show measurable gains in both executive function and memory, exceeding "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "0.5 standard deviations"
+        },
+        {
+          "type": "text",
+          "text": " relative to baseline scores. These improvements will be evident across multiple cognitive tests, including the Stroop, n-back, and Trail Making tasks."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Validated Predictive Model:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "Through integrated data analysis, the study aims to develop and validate a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "predictive statistical model"
+        },
+        {
+          "type": "text",
+          "text": " that links participant adherence, biomarker dynamics, and cognitive performance changes. This model will serve as a tool for identifying key mediators of successful intervention outcomes."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Clinical Translation Framework:"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "A major deliverable of the project will be the creation of a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "clinical translation framework"
+        },
+        {
+          "type": "text",
+          "text": "—comprising step-by-step guidelines for the scalable and sustainable implementation of the multi-modal intervention in community and healthcare settings."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Potential Pitfalls and Mitigation Strategies"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Participant Attrition (>15%):"
+        },
+        {
+          "type": "hardBreak"
+        },
+        {
+          "type": "text",
+          "text": "High dropout rates could reduce statistical power and bias results. To minimize attrition, the study will employ "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "italic",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "continuous engagement strategies"
+        },
+        {
+          "type": "text",
+          "text": " including telecoaching sessions, regular follow-ups, and gamified feedback mechanisms to maintain motivation and adherence."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Innovation"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Novelty of the Approach"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This study pioneers a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "comprehensive, neurobiologically-informed multi-modal protocol"
+        },
+        {
+          "type": "text",
+          "text": " targeting plasticity from molecular to behavioral levels. While previous studies examined isolated effects, ours is the first to:"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Integrate "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "adaptive cognitive training"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "aerobic conditioning"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "nutritional supplementation"
+                },
+                {
+                  "type": "text",
+                  "text": " within a unified, longitudinal design."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Quantitatively link "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "neural imaging biomarkers (fMRI, EEG)"
+                },
+                {
+                  "type": "text",
+                  "text": " with "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "biochemical markers (BDNF, IGF-1)"
+                },
+                {
+                  "type": "text",
+                  "text": " and behavioral outcomes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Establish "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "age-stratified intervention thresholds"
+                },
+                {
+                  "type": "text",
+                  "text": ", enabling precision targeting of aging populations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Incorporate "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "machine-learning prediction models"
+                },
+                {
+                  "type": "text",
+                  "text": " for personalized response forecasting."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Technological and Methodological Advances"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Custom digital cognitive training platform with real-time adherence analytics."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Cross-site harmonization of imaging pipelines using containerized neuroinformatics infrastructure (Docker + BIDS-compliant)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Integration of wearable HR and sleep data streams for behavioral compliance verification."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Theoretical Contribution"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This proposal advances the "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Systems Plasticity Paradigm"
+        },
+        {
+          "type": "text",
+          "text": ", positing that optimal cognitive aging depends on multi-level modulation—neural, vascular, and biochemical. Findings will challenge reductionist models and establish a foundation for holistic neurogerontology frameworks."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Broader Impacts"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Clinical and Public Health Implications"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "If successful, this trial will redefine the standard of care for cognitive aging prevention by:"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Providing "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "evidence-based, low-cost intervention protocols"
+                },
+                {
+                  "type": "text",
+                  "text": " adaptable for community health programs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Reducing healthcare expenditures related to dementia and institutional care."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Empowering older adults through accessible self-management strategies (digital, exercise, diet-based)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Societal and Economic Relevance"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Delaying cognitive decline by even 5 years could reduce dementia prevalence by ~40% (Brookmeyer et al., 2018). The scalable nature of our protocol offers immediate translational potential for health agencies, insurers, and senior-care providers."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Training and Dissemination"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This project will train 12 research assistants and 6 postdoctoral fellows across three sites, fostering interdisciplinary expertise in neuroscience, biostatistics, and aging research. Findings will be disseminated via:"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Peer-reviewed journals (e.g., "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Neurobiology of Aging"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Frontiers in Aging Neuroscience"
+                },
+                {
+                  "type": "text",
+                  "text": ")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Open-access data via NIH DASH repository"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Workshops and webinars for clinicians and policymakers"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Community Engagement"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Partnerships with local senior organizations and wellness centers will ensure equitable access and participant diversity. Engagement activities (educational talks, newsletters, online resources) will extend impact beyond academia."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Budget and Resources"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Budget Summary (Estimated, 24 Months)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The total estimated budget over 24 months is "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$1,263,000"
+        },
+        {
+          "type": "text",
+          "text": ", including personnel, participant compensation, neuroimaging, supplies, software, travel, and publication costs. Personnel (principal investigator, co-investigators, coordinators, and data analysts) account for approximately "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$630,000"
+        },
+        {
+          "type": "text",
+          "text": " across two years. Participant compensation totals "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$168,000"
+        },
+        {
+          "type": "text",
+          "text": ", based on 420 participants receiving $400 each year. Neuroimaging costs for MRI and EEG are estimated at "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$280,000"
+        },
+        {
+          "type": "text",
+          "text": ", while supplies such as supplements, wearable trackers, and lab kits are budgeted at "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$110,000"
+        },
+        {
+          "type": "text",
+          "text": ". Software and licenses total "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$30,000"
+        },
+        {
+          "type": "text",
+          "text": ", travel for conferences and site coordination amounts to "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$30,000"
+        },
+        {
+          "type": "text",
+          "text": ", and publication and dissemination are projected at "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "$15,000"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Institutional Support"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Each site provides substantial in-kind contributions, including:"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "MRI time subsidy (30% institutional coverage)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Access to EEG and biochemical laboratories"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Statistical consulting through the biostatistics core"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "IT support and secure data storage (10 TB server space)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Facilities and Equipment"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The project will utilize "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Siemens Prisma 3T MRI systems"
+        },
+        {
+          "type": "text",
+          "text": " across all sites, "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "64-channel BioSemi EEG systems"
+        },
+        {
+          "type": "text",
+          "text": ", and a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "biochemical assays laboratory"
+        },
+        {
+          "type": "text",
+          "text": " equipped with ELISA plate readers. Exercise facilities include heart rate monitors and cycle ergometers. Data storage and sharing are supported by a "
+        },
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "secure infrastructure compliant with NIH FISMA standards"
+        },
+        {
+          "type": "text",
+          "text": ". potential for health agencies, insurers, and senior-care providers."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Training and Dissemination"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "This project will train 12 research assistants and 6 postdoctoral fellows across three sites, fostering interdisciplinary expertise in neuroscience, biostatistics, and aging research. Findings will be disseminated via:"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null,
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "References and Appendices"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      },
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold",
+              "attrs": {
+                "_hash": null
+              }
+            }
+          ],
+          "text": "Selected References"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "attrs": {
+        "_hash": null
+      },
+      "content": [
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Andrews-Hanna, J. R., et al. (2007). Disruption of large-scale brain systems in advanced aging. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Neuron"
+                },
+                {
+                  "type": "text",
+                  "text": ", 56(5), 924–935."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Birks, J., & Harvey, R. (2018). Donepezil for dementia due to Alzheimer’s disease. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Cochrane Database of Systematic Reviews"
+                },
+                {
+                  "type": "text",
+                  "text": ", 6, CD001190."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Brookmeyer, R., et al. (2018). Forecasting the global burden of Alzheimer’s disease. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Alzheimer’s & Dementia"
+                },
+                {
+                  "type": "text",
+                  "text": ", 14(4), 497–506."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Burke, S. N., & Barnes, C. A. (2020). Neural plasticity in the aging brain. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Nature Reviews Neuroscience"
+                },
+                {
+                  "type": "text",
+                  "text": ", 11, 30–40."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Colcombe, S. J., & Kramer, A. F. (2003). Fitness effects on cognitive function in aging. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Psychological Science"
+                },
+                {
+                  "type": "text",
+                  "text": ", 14(2), 125–130."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Erickson, K. I., et al. (2019). Exercise training increases hippocampal volume and memory in older adults. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "PNAS"
+                },
+                {
+                  "type": "text",
+                  "text": ", 108(7), 3017–3022."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Lampit, A., et al. (2014). Cognitive training in older adults: A meta-analysis. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "PLOS Medicine"
+                },
+                {
+                  "type": "text",
+                  "text": ", 11(11), e1001756."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Ngandu, T., et al. (2015). A 2-year multidomain intervention to prevent cognitive decline. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "The Lancet"
+                },
+                {
+                  "type": "text",
+                  "text": ", 385(9984), 2255–2263."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Prince, M., et al. (2022). The global prevalence of dementia: A systematic review. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Alzheimer’s & Dementia"
+                },
+                {
+                  "type": "text",
+                  "text": ", 18(1), 45–55."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Voss, M. W., et al. (2013). Bridging animal and human models of exercise-induced brain plasticity. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Trends in Cognitive Sciences"
+                },
+                {
+                  "type": "text",
+                  "text": ", 17(10), 525–544."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "attrs": {
+            "_hash": null
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "_hash": null,
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Witte, A. V., et al. (2014). Long-chain omega-3 fatty acids improve brain function in older adults. "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic",
+                      "attrs": {
+                        "_hash": null
+                      }
+                    }
+                  ],
+                  "text": "Cerebral Cortex"
+                },
+                {
+                  "type": "text",
+                  "text": ", 24(11), 3059–3068."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "_hash": null,
+        "textAlign": null
+      }
+    }
+  ]
+}
