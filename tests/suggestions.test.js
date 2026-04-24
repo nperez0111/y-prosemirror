@@ -875,8 +875,14 @@ export const testReconfigureRoundTripWithSuggestions = async () => {
         type: 'paragraph',
         content: [
           { type: 'text', text: 'hello' },
-          { type: 'text', text: ' world', marks: [insertionMark] },
-          { type: 'text', text: '!', marks: [insertionMark] }
+          { type: 'text', text: ' world', marks: [{
+            type: 'y-attributed-insert',
+            attrs: { userIds: ['A'], timestamp: null }
+          }] },
+          { type: 'text', text: '!', marks: [{
+            type: 'y-attributed-insert',
+            attrs: { userIds: ['B'], timestamp: null }
+          }] }
         ]
       }
     ]
