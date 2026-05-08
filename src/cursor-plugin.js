@@ -8,7 +8,6 @@ import {
 import { yCursorPluginKey, ySyncPluginKey } from './keys.js'
 
 import * as math from 'lib0/math'
-import { $syncPluginStateUpdate } from './sync-plugin.js'
 
 /**
  * @typedef {Object} User
@@ -21,7 +20,7 @@ import { $syncPluginStateUpdate } from './sync-plugin.js'
  * @param {number} currentClientId
  * @param {number} userClientId
  * @param {Record<string, any>} awarenessState
- * @returns {boolean}
+ * @returns {boolean} true if the cursor should be rendered for the given client
  */
 
 /**
@@ -86,60 +85,67 @@ export const createDecorations = (
     // do not render cursors while snapshot is active
     return DecorationSet.empty
   }
+  const maxsize = math.max(state.doc.content.size - 1, 0)
   /**
    * @type {Decoration[]}
    */
   const decorations = []
   awareness.getStates().forEach((aw, clientId) => {
-    if (!awarenessFilter(awareness.clientID, clientId, aw)) {
+    const cursor = aw[cursorStateField]
+
+    if (cursor == null || !awarenessFilter(awareness.clientID, clientId, aw)) {
       return
     }
 
-    const cursor = aw[cursorStateField]
-
-    if (cursor != null) {
-      const user = aw.user || {}
-      if (user.color == null) {
-        user.color = '#ffa500'
-      }
-      if (user.name == null) {
-        user.name = `User: ${clientId}`
-      }
-      let anchor = relativePositionToAbsolutePosition(
-        Y.createRelativePositionFromJSON(cursor.anchor),
-        type,
-        state.doc,
-        ystate.attributionManager
+    const user = aw.user || {}
+    if (user.color == null) {
+      user.color = '#ffa500'
+    }
+    if (user.name == null) {
+      user.name = `User: ${clientId}`
+    }
+    let anchor = relativePositionToAbsolutePosition(
+      Y.createRelativePositionFromJSON(cursor.anchor),
+      type,
+      state.doc,
+      ystate.attributionManager
+    )
+    let head = relativePositionToAbsolutePosition(
+      Y.createRelativePositionFromJSON(cursor.head),
+      type,
+      state.doc,
+      ystate.attributionManager
+    )
+    if (anchor !== null && head !== null) {
+      anchor = math.min(anchor, maxsize)
+      head = math.min(head, maxsize)
+      decorations.push(
+        Decoration.widget(head, () => createCursor(user, clientId), {
+          key: clientId + '',
+          side: 10
+        })
       )
-      let head = relativePositionToAbsolutePosition(
-        Y.createRelativePositionFromJSON(cursor.head),
-        type,
-        state.doc,
-        ystate.attributionManager
+      decorations.push(
+        Decoration.inline(math.min(anchor, head), math.max(anchor, head), createSelection(user, clientId), {
+          inclusiveEnd: true,
+          inclusiveStart: false
+        })
       )
-      if (anchor !== null && head !== null) {
-        const maxsize = math.max(state.doc.content.size - 1, 0)
-        anchor = math.min(anchor, maxsize)
-        head = math.min(head, maxsize)
-        decorations.push(
-          Decoration.widget(head, () => createCursor(user, clientId), {
-            key: clientId + '',
-            side: 10
-          })
-        )
-        const from = math.min(anchor, head)
-        const to = math.max(anchor, head)
-        decorations.push(
-          Decoration.inline(from, to, createSelection(user, clientId), {
-            inclusiveEnd: true,
-            inclusiveStart: false
-          })
-        )
-      }
     }
   })
   return DecorationSet.create(state.doc, decorations)
 }
+
+/**
+ * @callback ComputeCursorCallback
+ * @param {object} ctx - The context object
+ * @param {import('prosemirror-view').EditorView} ctx.view - The editor view
+ * @param {{anchor: Y.RelativePosition, head: Y.RelativePosition} | null} ctx.prevCursor - The previous awareness cursor for this client (decoded to Y.RelativePosition), or null if not set
+ * @param {{anchor: Y.RelativePosition, head: Y.RelativePosition} | null} ctx.nextCursor - The freshly computed cursor for the local selection, or null if no Y type is bound
+ * @param {boolean} ctx.isOwnCursor - Whether `prevCursor` resolves inside this editor binding's bound type
+ * @param {'update' | 'focus' | 'blur'} ctx.reason - What triggered this invocation: 'update' (PM view.update tick), 'focus' (focusin on view.dom; only fires when no `setSelection` transaction is pending — see `selectionUpdateIsPending` in cursor-plugin.js), or 'blur' (focusout on view.dom)
+ * @returns {{anchor: Y.RelativePosition, head: Y.RelativePosition} | null} The next cursor state to be set in the awareness, or null to clear the cursor
+ */
 
 /**
  * A prosemirror plugin that listens to awareness information on Yjs.
@@ -151,10 +157,9 @@ export const createDecorations = (
  * @param {AwarenessFilter} [opts.awarenessStateFilter] A function that filters the awareness states to be rendered
  * @param {(user: User, clientId: number) => HTMLElement} [opts.cursorBuilder] A function that creates a cursor element
  * @param {(user: User, clientId: number) => import('prosemirror-view').DecorationAttrs} [opts.selectionBuilder] A function that creates a selection decoration
- * @param {(state: import('prosemirror-state').EditorState) => {$anchor: import('prosemirror-model').ResolvedPos, $head: import('prosemirror-model').ResolvedPos}} [opts.getSelection] A function that gets the selection from the editor state
- * @param {number | null} [opts.cursorTimeout] How long (in ms) after the editor loses focus before the cursor is cleared from awareness. Set to `null` or `0` to disable (cursor persists until awareness drops). Defaults to `10000`.
- * @param {string} [cursorStateField] By default all editor bindings use the awareness 'cursor' field to propagate cursor information, this allows you to use a different field name
- * @return {any}
+ * @param {ComputeCursorCallback} [opts.computeCursor] A function that computes the cursor state from the previous and next cursor states
+ * @param {string} [opts.cursorStateField = 'cursor'] By default all editor bindings use the awareness 'cursor' field to propagate cursor information, this allows you to use a different field name
+ * @return {Plugin<DecorationSet>}
  */
 export const yCursorPlugin = (
   awareness,
@@ -162,10 +167,16 @@ export const yCursorPlugin = (
     awarenessStateFilter = (currentClientId, userClientId) => currentClientId !== userClientId,
     cursorBuilder = defaultCursorBuilder,
     selectionBuilder = defaultSelectionBuilder,
-    getSelection = (state) => state.selection,
-    cursorTimeout = 10000
-  } = {},
-  cursorStateField = 'cursor'
+    cursorStateField = 'cursor',
+    computeCursor = (ctx) => {
+      if (ctx.view.hasFocus()) {
+        return ctx.nextCursor
+      }
+      // delete the cursor if it is owned by this editor binding
+      // otherwise, keep the previous cursor
+      return ctx.isOwnCursor ? null : ctx.prevCursor
+    }
+  } = {}
 ) =>
   new Plugin({
     key: yCursorPluginKey,
@@ -181,14 +192,12 @@ export const yCursorPlugin = (
         )
       },
       apply (tr, prevState, _oldState, newState) {
-        const ySyncMeta = $syncPluginStateUpdate.nullable.expect(tr.getMeta(ySyncPluginKey) || null)
+        const ySyncMeta = tr.getMeta(ySyncPluginKey)
         const ySyncTransaction = tr.getMeta('y-sync-transaction')
-        const yCursorState = tr.getMeta(yCursorPluginKey)
-        if (
-          (ySyncMeta) ||
-          (ySyncTransaction) ||
-          (yCursorState && yCursorState.awarenessUpdated)
-        ) {
+        const yCursorMeta = tr.getMeta(yCursorPluginKey)
+
+        if (ySyncMeta || ySyncTransaction || yCursorMeta?.awarenessUpdated) {
+          // rebuild all decorations
           return createDecorations(
             newState,
             awareness,
@@ -198,94 +207,110 @@ export const yCursorPlugin = (
             cursorStateField
           )
         }
+        // remap decorations
         return prevState.map(tr.mapping, tr.doc)
       }
     },
     props: {
-      decorations: (state) => {
-        return yCursorPluginKey.getState(state)
-      }
+      decorations: (state) => yCursorPluginKey.getState(state)
     },
     view: (view) => {
       const awarenessListener = () => {
-        // @ts-ignore
-        if (view.docView) { // TODO why is this using docView? Ask Kevin about this.
-          view.dispatch(view.state.tr.setMeta(yCursorPluginKey, { awarenessUpdated: true }))
+        if (view.isDestroyed) {
+          return
         }
+        view.dispatch(view.state.tr.setMeta(yCursorPluginKey, { awarenessUpdated: true }))
       }
+
       /**
-       * @type {ReturnType<typeof setTimeout> | null}
+       * @param {'update' | 'focus' | 'blur'} reason
        */
-      let staleTimer = null
-      const resetStaleTimer = () => {
-        if (staleTimer != null) {
-          clearTimeout(staleTimer)
-          staleTimer = null
+      const runComputeCursor = (reason) => {
+        if (view.isDestroyed) {
+          return
         }
-        if (cursorTimeout == null || cursorTimeout <= 0) return
-        staleTimer = setTimeout(() => {
-          staleTimer = null
-          if (!view.hasFocus()) {
-            const current = awareness.getLocalState() || {}
-            if (current[cursorStateField] != null) {
-              awareness.setLocalStateField(cursorStateField, null)
-            }
-          } else {
-            // still focused, re-arm the timer
-            resetStaleTimer()
-          }
-        }, cursorTimeout)
-      }
-      const updateCursorInfo = () => {
         const ystate = ySyncPluginKey.getState(view.state)
-        // @note We make implicit checks when checking for the cursor property
-        const current = awareness.getLocalState() || {}
+        const rawCursor = (awareness.getLocalState() || {})[cursorStateField]
         /**
-         * @type {{anchor: any, head: any}}
+         * @type {{anchor: Y.RelativePosition, head: Y.RelativePosition} | null}
          */
-        const cursor = current[cursorStateField]
-        if (view.hasFocus() && ystate?.ytype) {
-          const selection = getSelection(view.state)
-          const anchor = absolutePositionToRelativePosition(
-            selection.$anchor,
-            ystate.ytype,
-            ystate.attributionManager
-          )
-          const head = absolutePositionToRelativePosition(
-            selection.$head,
-            ystate.ytype,
-            ystate.attributionManager
-          )
-          if (
-            cursor == null ||
-            !Y.compareRelativePositions(
-              Y.createRelativePositionFromJSON(cursor.anchor),
-              anchor
-            ) ||
-            !Y.compareRelativePositions(
-              Y.createRelativePositionFromJSON(cursor.head),
-              head
-            )
-          ) {
-            awareness.setLocalStateField(cursorStateField, {
-              anchor,
-              head
-            })
+        const prevCursor = rawCursor != null
+          ? {
+              anchor: Y.createRelativePositionFromJSON(rawCursor.anchor),
+              head: Y.createRelativePositionFromJSON(rawCursor.head)
+            }
+          : null
+
+        const nextCursor = ystate?.ytype
+          ? {
+              anchor: absolutePositionToRelativePosition(
+                view.state.selection.$anchor,
+                ystate.ytype,
+                ystate.attributionManager
+              ),
+              head: absolutePositionToRelativePosition(
+                view.state.selection.$head,
+                ystate.ytype,
+                ystate.attributionManager
+              )
+            }
+          : null
+        const nextCursorState = computeCursor({
+          view,
+          prevCursor,
+          nextCursor,
+          reason,
+          get isOwnCursor () {
+            return prevCursor != null && ystate?.ytype != null && relativePositionToAbsolutePosition(
+              prevCursor.anchor,
+              ystate.ytype,
+              view.state.doc,
+              ystate.attributionManager
+            ) !== null
           }
-          resetStaleTimer()
+        })
+
+        // compute whether the cursor has changed
+        const cursorChanged = (prevCursor == null) !== (nextCursorState == null) || (
+          prevCursor != null && nextCursorState != null && (
+            !Y.compareRelativePositions(prevCursor.anchor, nextCursorState.anchor) ||
+            !Y.compareRelativePositions(prevCursor.head, nextCursorState.head)
+          )
+        )
+
+        if (cursorChanged) {
+          awareness.setLocalStateField(cursorStateField, nextCursorState)
         }
       }
+
+      const onFocusIn = () => {
+        if (view.isDestroyed) return
+        // This fixes an issue where focusin is called before the selection is updated
+        // This allows us to bail out if the selection will change immediately after focusin
+        // This allows us to skip a flicker of setting the cursor, just to change it to the correct position
+        /** @type {Selection | null} */
+        const sel = (/** @type {any} */ (view.root)).getSelection()
+        if (sel && sel.rangeCount > 0 && sel.anchorNode) {
+          try {
+            if (view.posAtDOM(sel.anchorNode, sel.anchorOffset, -1) !== view.state.selection.anchor) {
+              return
+            }
+          } catch { /* posAtDOM failed; re-evaluate the cursor */ }
+        }
+        runComputeCursor('focus')
+      }
+      const onFocusOut = () => runComputeCursor('blur')
+
       awareness.on('change', awarenessListener)
-      view.dom.addEventListener('focusin', updateCursorInfo)
+      view.dom.addEventListener('focusin', onFocusIn)
+      view.dom.addEventListener('focusout', onFocusOut)
+
       return {
-        update: updateCursorInfo,
+        update: () => runComputeCursor('update'),
         destroy: () => {
-          if (staleTimer != null) {
-            clearTimeout(staleTimer)
-            staleTimer = null
-          }
-          view.dom.removeEventListener('focusin', updateCursorInfo)
           awareness.off('change', awarenessListener)
+          view.dom.removeEventListener('focusin', onFocusIn)
+          view.dom.removeEventListener('focusout', onFocusOut)
         }
       }
     }

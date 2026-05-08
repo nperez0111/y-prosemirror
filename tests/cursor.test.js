@@ -2,7 +2,6 @@
 import * as YPM from '@y/prosemirror'
 import * as Y from '@y/y'
 import * as t from 'lib0/testing'
-import * as promise from 'lib0/promise'
 import { EditorState, TextSelection } from 'prosemirror-state'
 import { EditorView } from 'prosemirror-view'
 import { Schema } from 'prosemirror-model'
@@ -19,10 +18,8 @@ const schema = new Schema({
 /**
  * @param {Y.Doc} ydoc
  * @param {Awareness} awareness
- * @param {object} [opts]
- * @param {number | null} [opts.cursorTimeout]
  */
-const createView = (ydoc, awareness, opts = {}) => {
+const createView = (ydoc, awareness) => {
   const ytype = ydoc.get('prosemirror')
   const view = new EditorView(
     { mount: document.createElement('div') },
@@ -31,7 +28,7 @@ const createView = (ydoc, awareness, opts = {}) => {
         schema,
         plugins: [
           YPM.syncPlugin(),
-          YPM.yCursorPlugin(awareness, { cursorTimeout: opts.cursorTimeout ?? 10000 })
+          YPM.yCursorPlugin(awareness)
         ]
       })
     }
@@ -61,14 +58,6 @@ const simulateFocus = (view) => {
   const evt = view.dom.ownerDocument.createEvent('Event')
   evt.initEvent('focusin', true, true)
   view.dom.dispatchEvent(evt)
-}
-
-/**
- * Simulate blur: make hasFocus return false
- * @param {EditorView} view
- */
-const simulateBlur = (view) => {
-  Object.defineProperty(view, 'hasFocus', { value: () => false, writable: true, configurable: true })
 }
 
 // === Tests ===
@@ -101,216 +90,6 @@ export const testCursorPublishedOnFocus = (_tc) => {
   t.assert(stateAfter.cursor.head != null, 'cursor has head')
 
   view.destroy()
-  awareness.destroy()
-}
-
-/**
- * Cursor should NOT be immediately cleared when editor loses focus (no focusout behavior).
- * @param {t.TestCase} _tc
- */
-export const testCursorNotClearedImmediatelyOnBlur = (_tc) => {
-  const ydoc = new Y.Doc()
-  const awareness = new Awareness(ydoc)
-  const view = createView(ydoc, awareness)
-
-  insertParagraph(view, 'Hello world')
-
-  // Focus and publish cursor
-  simulateFocus(view)
-  view.dispatch(view.state.tr)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor published')
-
-  // Blur the editor
-  simulateBlur(view)
-
-  // Dispatch a transaction while blurred (simulates any subsequent transaction)
-  view.dispatch(view.state.tr)
-
-  // Cursor should still be present -- not immediately cleared
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor NOT cleared immediately on blur')
-
-  view.destroy()
-  awareness.destroy()
-}
-
-/**
- * Stale timer should clear the cursor after cursorTimeout ms when blurred.
- * @param {t.TestCase} _tc
- */
-export const testStaleTimerClearsCursorAfterTimeout = async (_tc) => {
-  const ydoc = new Y.Doc()
-  const awareness = new Awareness(ydoc)
-  // Use a very short timeout for testing
-  const view = createView(ydoc, awareness, { cursorTimeout: 50 })
-
-  insertParagraph(view, 'Hello world')
-
-  // Focus and publish cursor
-  simulateFocus(view)
-  view.dispatch(view.state.tr)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor published')
-
-  // Blur the editor
-  simulateBlur(view)
-
-  // Wait less than the timeout
-  await promise.wait(20)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor still present before timeout')
-
-  // Wait for the timeout to expire
-  await promise.wait(50)
-  t.assert(awareness.getLocalState()?.cursor == null, 'cursor cleared after stale timeout')
-
-  view.destroy()
-  awareness.destroy()
-}
-
-/**
- * When cursorTimeout is null, cursor should never be auto-cleared.
- * @param {t.TestCase} _tc
- */
-export const testCursorTimeoutNullDisablesStaleClearing = async (_tc) => {
-  const ydoc = new Y.Doc()
-  const awareness = new Awareness(ydoc)
-  const view = createView(ydoc, awareness, { cursorTimeout: null })
-
-  insertParagraph(view, 'Hello world')
-
-  // Focus and publish cursor
-  simulateFocus(view)
-  view.dispatch(view.state.tr)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor published')
-
-  // Blur
-  simulateBlur(view)
-
-  // Wait a reasonable amount of time
-  await promise.wait(100)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor still present with cursorTimeout=null')
-
-  view.destroy()
-  awareness.destroy()
-}
-
-/**
- * When cursorTimeout is 0, cursor should never be auto-cleared.
- * @param {t.TestCase} _tc
- */
-export const testCursorTimeoutZeroDisablesStaleClearing = async (_tc) => {
-  const ydoc = new Y.Doc()
-  const awareness = new Awareness(ydoc)
-  const view = createView(ydoc, awareness, { cursorTimeout: 0 })
-
-  insertParagraph(view, 'Hello world')
-
-  // Focus and publish cursor
-  simulateFocus(view)
-  view.dispatch(view.state.tr)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor published')
-
-  // Blur
-  simulateBlur(view)
-
-  // Wait a reasonable amount of time
-  await promise.wait(100)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor still present with cursorTimeout=0')
-
-  view.destroy()
-  awareness.destroy()
-}
-
-/**
- * Re-focusing before timeout should reset the stale timer and keep cursor alive.
- * @param {t.TestCase} _tc
- */
-export const testRefocusResetsStaleTimer = async (_tc) => {
-  const ydoc = new Y.Doc()
-  const awareness = new Awareness(ydoc)
-  const view = createView(ydoc, awareness, { cursorTimeout: 60 })
-
-  insertParagraph(view, 'Hello world')
-
-  // Focus and publish cursor
-  simulateFocus(view)
-  view.dispatch(view.state.tr)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor published')
-
-  // Blur
-  simulateBlur(view)
-
-  // Wait less than timeout, then refocus
-  await promise.wait(40)
-  simulateFocus(view)
-  view.dispatch(view.state.tr) // triggers updateCursorInfo which resets stale timer
-
-  // Blur again
-  simulateBlur(view)
-
-  // Wait for original timeout window -- cursor should still be alive because timer was reset
-  await promise.wait(40)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor still present because timer was reset')
-
-  // Wait for the full new timeout
-  await promise.wait(40)
-  t.assert(awareness.getLocalState()?.cursor == null, 'cursor cleared after reset timer expired')
-
-  view.destroy()
-  awareness.destroy()
-}
-
-/**
- * Destroying the plugin should NOT clear cursor from awareness.
- * @param {t.TestCase} _tc
- */
-export const testDestroyDoesNotClearCursor = (_tc) => {
-  const ydoc = new Y.Doc()
-  const awareness = new Awareness(ydoc)
-  const view = createView(ydoc, awareness)
-
-  insertParagraph(view, 'Hello world')
-
-  // Focus and publish cursor
-  simulateFocus(view)
-  view.dispatch(view.state.tr)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor published')
-
-  // Destroy the view
-  view.destroy()
-
-  // Cursor should still be in awareness
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor NOT cleared on destroy')
-
-  awareness.destroy()
-}
-
-/**
- * Destroying the plugin should clear the stale timer (no delayed effects).
- * @param {t.TestCase} _tc
- */
-export const testDestroyCleanupStaleTimer = async (_tc) => {
-  const ydoc = new Y.Doc()
-  const awareness = new Awareness(ydoc)
-  const view = createView(ydoc, awareness, { cursorTimeout: 30 })
-
-  insertParagraph(view, 'Hello world')
-
-  // Focus and publish cursor
-  simulateFocus(view)
-  view.dispatch(view.state.tr)
-  t.assert(awareness.getLocalState()?.cursor != null, 'cursor published')
-
-  // Blur
-  simulateBlur(view)
-
-  // Destroy immediately -- timer should be cancelled
-  view.destroy()
-
-  // Wait for what would have been the timeout
-  await promise.wait(50)
-
-  // Cursor should still be present because timer was cleared on destroy
-  t.assert(awareness.getLocalState()?.cursor != null, 'stale timer was cancelled on destroy')
-
   awareness.destroy()
 }
 
