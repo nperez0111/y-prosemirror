@@ -25,9 +25,22 @@ const _clearAttributionFormatting = {
 }
 
 /**
- * Default attribution-to-mark mapper. Custom mappers must also use the permitted mark names:
- * `y-attributed-insert`, `y-attributed-delete`, and `y-attributed-format`. No other mark names
- * are permitted.
+ * Default attribution-to-mark mapper.
+ *
+ * **The mark names are part of `y-prosemirror`'s public contract and cannot be
+ * changed.** A custom `mapAttributionToMark` may return a different *value*
+ * (different attrs, omit some attribution kinds, etc.), but it must use the
+ * exact mark names below - other internals reference them by name and will not
+ * find marks named anything else:
+ *
+ * - `y-attributed-insert`
+ * - `y-attributed-delete`
+ * - `y-attributed-format`
+ *
+ * The integrator's ProseMirror schema must (a) define mark types with exactly
+ * these names and (b) ensure they are allowed on every node where attribution
+ * marks may land. See `CAVEATS.md` ("Attribution mark names are fixed") for the
+ * full rationale and the schema gotcha around mark-group resolution.
  *
  * @template {import('lib0/delta').Attribution} T
  * @param {Record<string, unknown> | null} format
@@ -325,7 +338,29 @@ export const deltaToPNode = (d, schema, dformat) => {
     attrs[attr.key] = attr.value
   }
   const dc = d.children.map(c => delta.$insertOp.check(c) ? c.insert.map(cn => deltaToPNode(cn, schema, c.format)) : (delta.$textOp.check(c) ? [schema.text(c.insert, formattingAttributesToMarks(c.format, schema))] : []))
-  return schema.node(d.name ?? 'doc', attrs, dc.flat(1), formattingAttributesToMarks(dformat, schema))
+  const nodeType = schema.nodes[d.name ?? 'doc']
+  if (!nodeType) {
+    throw new Error(
+      '[y/prosemirror]: node type does not exist in the schema: ' + d.name
+    )
+  }
+  const inputChildren = dc.flat(1)
+  const inputMarks = formattingAttributesToMarks(dformat, schema)
+  const pNode = nodeType.createAndFill(
+    attrs,
+    inputChildren,
+    inputMarks
+  )
+  // eslint-disable-next-line
+  console.log('[d2p]', (d.name ?? '<doc>'),
+    'IN children=', inputChildren.length,
+    JSON.stringify(inputChildren.map(n => n && n.toJSON ? n.toJSON() : n)),
+    'marks=', JSON.stringify(inputMarks),
+    'OUT=', pNode === null ? 'NULL' : JSON.stringify(pNode.toJSON()))
+  if (pNode === null) {
+    throw new Error('[y/prosemirror]: failed to create node: ' + d.name)
+  }
+  return pNode
 }
 
 /**

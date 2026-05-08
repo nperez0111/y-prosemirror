@@ -8,6 +8,7 @@ import {
 import { yCursorPluginKey, ySyncPluginKey } from './keys.js'
 
 import * as math from 'lib0/math'
+import { $syncPluginStateUpdate } from './sync-plugin.js'
 
 /**
  * @typedef {Object} User
@@ -68,6 +69,7 @@ export const defaultSelectionBuilder = (user) => {
  * @param {(user: User, clientId: number) => Element} createCursor
  * @param {(user: User, clientId: number) => import('prosemirror-view').DecorationAttrs} createSelection
  * @param {string} cursorStateField
+ * @param {any} [syncStateOverride] Pre-resolved sync plugin state. When provided, used in place of looking it up from `state`. Used by `apply` so we can read the sync state from `oldState` (which is fully populated) instead of from `newState` (which may not have the sync field yet if this plugin runs before the sync plugin in the field order).
  * @return {DecorationSet}
  */
 export const createDecorations = (
@@ -76,9 +78,10 @@ export const createDecorations = (
   awarenessFilter,
   createCursor,
   createSelection,
-  cursorStateField
+  cursorStateField,
+  syncStateOverride
 ) => {
-  const ystate = ySyncPluginKey.getState(state)
+  const ystate = syncStateOverride != null ? syncStateOverride : ySyncPluginKey.getState(state)
   const type = ystate?.ytype
   const doc = type?.doc
   if (!type || !doc) {
@@ -90,10 +93,19 @@ export const createDecorations = (
    * @type {Decoration[]}
    */
   const decorations = []
+  // Use `awareness.doc.clientID` (or its `clientID` field, which mirrors it)
+  // rather than `type.doc.clientID` for the local-client identity. They're the
+  // same in normal collaboration, but diverge when the bound `ytype` lives in a
+  // *different* Y.Doc than the awareness — e.g., a suggestion-tracking Y.Doc
+  // whose clientID is deliberately swapped to attribute edits to a "suggester"
+  // identity. Awareness peer keys are always the awareness doc's clientIDs, so
+  // filtering against the bound type's doc would fail to recognize the local
+  // user and we'd render our own cursor as if it were a remote one.
+  const localClientId = awareness.doc ? awareness.doc.clientID : awareness.clientID
   awareness.getStates().forEach((aw, clientId) => {
     const cursor = aw[cursorStateField]
 
-    if (cursor == null || !awarenessFilter(awareness.clientID, clientId, aw)) {
+    if (cursor == null || !awarenessFilter(localClientId, clientId, aw)) {
       return
     }
 
@@ -191,20 +203,30 @@ export const yCursorPlugin = (
           cursorStateField
         )
       },
-      apply (tr, prevState, _oldState, newState) {
-        const ySyncMeta = tr.getMeta(ySyncPluginKey)
+      apply (tr, prevState, oldState, newState) {
+        const ySyncMeta = $syncPluginStateUpdate.nullable.expect(tr.getMeta(ySyncPluginKey) || null)
         const ySyncTransaction = tr.getMeta('y-sync-transaction')
         const yCursorMeta = tr.getMeta(yCursorPluginKey)
 
         if (ySyncMeta || ySyncTransaction || yCursorMeta?.awarenessUpdated) {
-          // rebuild all decorations
+          // PM fills `newState` plugin fields in field order during apply, so
+          // `ySyncPluginKey.getState(newState)` may return null if this plugin
+          // runs before the sync plugin (which can happen when the host
+          // editor — e.g., Tiptap/BlockNote — orders plugins by name or
+          // priority). Read the sync state from `oldState` (fully populated)
+          // and overlay the in-flight update from this transaction's meta, if
+          // any, so we still see the new ytype the moment configureYProsemirror
+          // is dispatched.
+          const baseSync = ySyncPluginKey.getState(oldState) || ySyncPluginKey.getState(newState)
+          const syncState = ySyncMeta ? Object.assign({}, baseSync, ySyncMeta) : baseSync
           return createDecorations(
             newState,
             awareness,
             awarenessStateFilter,
             cursorBuilder,
             selectionBuilder,
-            cursorStateField
+            cursorStateField,
+            syncState
           )
         }
         // remap decorations
