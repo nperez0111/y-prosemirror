@@ -69,7 +69,7 @@ export const defaultSelectionBuilder = (user) => {
  * @param {(user: User, clientId: number) => Element} createCursor
  * @param {(user: User, clientId: number) => import('prosemirror-view').DecorationAttrs} createSelection
  * @param {string} cursorStateField
- * @param {any} [syncStateOverride] Pre-resolved sync plugin state. When provided, used in place of looking it up from `state`. Used by `apply` so we can read the sync state from `oldState` (which is fully populated) instead of from `newState` (which may not have the sync field yet if this plugin runs before the sync plugin in the field order).
+ * @param {{ytype: Y.Type | null, attributionManager: Y.AbstractAttributionManager | null} | undefined} ystate
  * @return {DecorationSet}
  */
 export const createDecorations = (
@@ -79,9 +79,8 @@ export const createDecorations = (
   createCursor,
   createSelection,
   cursorStateField,
-  syncStateOverride
+  ystate
 ) => {
-  const ystate = syncStateOverride != null ? syncStateOverride : ySyncPluginKey.getState(state)
   const type = ystate?.ytype
   const doc = type?.doc
   if (!type || !doc) {
@@ -93,19 +92,10 @@ export const createDecorations = (
    * @type {Decoration[]}
    */
   const decorations = []
-  // Use `awareness.doc.clientID` (or its `clientID` field, which mirrors it)
-  // rather than `type.doc.clientID` for the local-client identity. They're the
-  // same in normal collaboration, but diverge when the bound `ytype` lives in a
-  // *different* Y.Doc than the awareness — e.g., a suggestion-tracking Y.Doc
-  // whose clientID is deliberately swapped to attribute edits to a "suggester"
-  // identity. Awareness peer keys are always the awareness doc's clientIDs, so
-  // filtering against the bound type's doc would fail to recognize the local
-  // user and we'd render our own cursor as if it were a remote one.
-  const localClientId = awareness.doc ? awareness.doc.clientID : awareness.clientID
   awareness.getStates().forEach((aw, clientId) => {
     const cursor = aw[cursorStateField]
 
-    if (cursor == null || !awarenessFilter(localClientId, clientId, aw)) {
+    if (cursor == null || !awarenessFilter(awareness.clientID, clientId, aw)) {
       return
     }
 
@@ -200,7 +190,8 @@ export const yCursorPlugin = (
           awarenessStateFilter,
           cursorBuilder,
           selectionBuilder,
-          cursorStateField
+          cursorStateField,
+          undefined
         )
       },
       apply (tr, prevState, oldState, newState) {
