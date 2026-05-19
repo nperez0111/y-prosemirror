@@ -8,6 +8,8 @@ import * as delta from './delta.test.js'
 import * as positions from './positions.test.js'
 import * as suggestions from './suggestions.test.js'
 import * as undo from './undo.test.js'
+import * as flatten from './flatten.test.js'
+import * as flattenSchema from './flatten-schema.test.js'
 // import * as tr from './tr.test.js'
 
 import { runTests } from 'lib0/testing'
@@ -53,7 +55,9 @@ runTests({
   delta,
   positions,
   suggestions,
-  undo
+  undo,
+  flatten,
+  flattenSchema
   // prosemirror,
   // tr
 }).then(success => {
