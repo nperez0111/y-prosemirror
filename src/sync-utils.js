@@ -3,7 +3,7 @@ import * as delta from 'lib0/delta'
 import * as math from 'lib0/math'
 import * as object from 'lib0/object'
 import * as s from 'lib0/schema'
-import { Node, Slice, Fragment } from 'prosemirror-model'
+import { Node, NodeRange, Slice, Fragment } from 'prosemirror-model'
 import {
   AddMarkStep,
   AddNodeMarkStep,
@@ -364,8 +364,17 @@ const _stepToDelta = s.match({ beforeDoc: Node, afterDoc: Node })
 
     const newEnd = afterDoc.resolve(step instanceof ReplaceAroundStep ? step.getMap().map(step.to) : step.from + step.slice.size)
 
-    const oldBlockRange = oldStart.blockRange(oldEnd)
-    const newBlockRange = newStart.blockRange(newEnd)
+    let oldBlockRange = oldStart.blockRange(oldEnd)
+    let newBlockRange = newStart.blockRange(newEnd)
+    // A block split (from === to) makes the old positions share a leaf block,
+    // so blockRange returns a deeper range than the new positions which span
+    // across the split. Normalize to the shallower depth so the diff compares
+    // children of the same parent type.
+    if (oldBlockRange && newBlockRange && oldBlockRange.depth !== newBlockRange.depth) {
+      const minDepth = Math.min(oldBlockRange.depth, newBlockRange.depth)
+      oldBlockRange = new NodeRange(oldStart, oldEnd, minDepth)
+      newBlockRange = new NodeRange(newStart, newEnd, minDepth)
+    }
     const oldDelta = deltaForBlockRange(oldBlockRange)
     const newDelta = deltaForBlockRange(newBlockRange)
     const diffD = delta.diff(oldDelta, newDelta)
@@ -423,8 +432,13 @@ const _stepToDelta = s.match({ beforeDoc: Node, afterDoc: Node })
     const oldEnd = beforeDoc.resolve(oldTo)
     const newStart = afterDoc.resolve(oldFrom)
     const newEnd = afterDoc.resolve(mappedTo)
-    const oldBlockRange = oldStart.blockRange(oldEnd)
-    const newBlockRange = newStart.blockRange(newEnd)
+    let oldBlockRange = oldStart.blockRange(oldEnd)
+    let newBlockRange = newStart.blockRange(newEnd)
+    if (oldBlockRange && newBlockRange && oldBlockRange.depth !== newBlockRange.depth) {
+      const minDepth = Math.min(oldBlockRange.depth, newBlockRange.depth)
+      oldBlockRange = new NodeRange(oldStart, oldEnd, minDepth)
+      newBlockRange = new NodeRange(newStart, newEnd, minDepth)
+    }
     const oldDelta = deltaForBlockRange(oldBlockRange)
     const newDelta = deltaForBlockRange(newBlockRange)
     const diffD = delta.diff(oldDelta, newDelta)

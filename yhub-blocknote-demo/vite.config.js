@@ -8,7 +8,8 @@ export default defineConfig({
       '@y/y',
       'prosemirror-state',
       'prosemirror-view',
-      'prosemirror-model'
+      'prosemirror-model',
+      'prosemirror-transform'
     ]
   },
   server: {
