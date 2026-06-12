@@ -15,3 +15,4 @@ export { buildDiffDecorationSet, suggestionDiffPlugin, renderDeletedContent, def
 /** @typedef {import('./diff-decorations.js').MapDiffToDecorations} MapDiffToDecorations */
 /** @typedef {import('./diff-decorations.js').MapDiffArgs} MapDiffArgs */
 export { ySuggestionDecorationPlugin } from './suggestion-decoration-plugin.js'
+export { editableDeletionWidget, editableDeletionMapDiff, handleEditableDeletionArrow, handleEditableDeletionTextInput, applyGhostAnchorOffsets, deletionKey, subEditorsByKey } from './editable-deletion.js'

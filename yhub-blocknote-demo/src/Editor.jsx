@@ -2,7 +2,7 @@ import { useCreateBlockNote } from '@blocknote/react'
 import { createExtension } from '@blocknote/core'
 import { BlockNoteView } from '@blocknote/mantine'
 import '@blocknote/mantine/style.css'
-import { syncPlugin, yCursorPlugin, ySuggestionDecorationPlugin } from '@y/prosemirror'
+import { syncPlugin, yCursorPlugin, ySuggestionDecorationPlugin, editableDeletionMapDiff } from '@y/prosemirror'
 import { useEffect } from 'react'
 import { yhub } from './yhub.js'
 
@@ -13,7 +13,9 @@ const YSyncExtension = createExtension(() => ({
 
 const YSuggestionDecorationExtension = createExtension(() => ({
   key: 'ySuggestionDecoration',
-  prosemirrorPlugins: [ySuggestionDecorationPlugin()]
+  // Render deleted content as editable sub-editors (footnote pattern) so a
+  // user can click into a deletion and edit the removed text.
+  prosemirrorPlugins: [ySuggestionDecorationPlugin({ mapDiffToDecorations: editableDeletionMapDiff })]
 }))
 
 const YCursorExtension = createExtension(() => ({

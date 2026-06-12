@@ -14,6 +14,7 @@ import * as undo from './undo.test.js'
 import * as commands from './commands.test.js'
 import * as yAttributionToDiffSet from './y-attribution-to-diffset.test.js'
 import * as suggestionDecorationPlugin from './suggestion-decoration-plugin.test.js'
+import * as editableDeletion from './editable-deletion.test.js'
 import * as tr from './tr.test.js'
 
 import { runTests } from 'lib0/testing'
@@ -66,6 +67,7 @@ runTests({
   commands,
   yAttributionToDiffSet,
   suggestionDecorationPlugin,
+  editableDeletion,
   // prosemirror,
   tr
 }).then(success => {

@@ -17,6 +17,7 @@ import { DecorationSet } from 'prosemirror-view'
 import { ySyncPluginKey, ySuggestionDecorationPluginKey } from './keys.js'
 import { ydeltaToDiffSet } from './y-attribution-to-diffset.js'
 import { buildDiffDecorationSet } from './diff-decorations.js' // eslint-disable-line
+import { handleEditableDeletionArrow, handleEditableDeletionTextInput, applyGhostAnchorOffsets } from './editable-deletion.js'
 /** @typedef {import('./diff-decorations.js').SuggestionDecorationOptions} SuggestionDecorationOptions */
 
 /**
@@ -34,7 +35,11 @@ function computeDecorations (doc, schema, ytype, am, opts) {
     return DecorationSet.empty
   }
   const attributedDelta = ytype.toDeltaDeep(am)
-  const diffs = ydeltaToDiffSet(attributedDelta, { displayedDoc: doc, schema })
+  // Re-anchor ghosts whose adjacent text was typed with the caret on their
+  // left (cursor-side-aware insertion at deletion boundaries).
+  const diffs = applyGhostAnchorOffsets(
+    ytype, ydeltaToDiffSet(attributedDelta, { displayedDoc: doc, schema })
+  )
   try {
     return buildDiffDecorationSet(doc, diffs, schema, opts)
   } catch (err) {
@@ -64,12 +69,21 @@ export const ySuggestionDecorationPlugin = (opts = {}) =>
               newState.doc, newState.schema, ystate.ytype, ystate.attributionManager, opts
             )
           }
+          // Attribution turned off (e.g. configureYProsemirror with a null
+          // AM): clear the overlay instead of letting stale ghosts linger.
+          return DecorationSet.empty
         }
         if (tr.docChanged) return prev.map(tr.mapping, tr.doc)
         return prev
       }
     },
     props: {
-      decorations: (state) => ySuggestionDecorationPluginKey.getState(state)
+      decorations: (state) => ySuggestionDecorationPluginKey.getState(state),
+      // Arrow-key navigation into/out of editable deletion sub-editors.
+      // No-op unless `mapDiffToDecorations` mounted editable widgets.
+      handleKeyDown: handleEditableDeletionArrow,
+      // Cursor-side-aware typing at ghost boundaries (records intent only,
+      // never consumes the event).
+      handleTextInput: handleEditableDeletionTextInput
     }
   })
