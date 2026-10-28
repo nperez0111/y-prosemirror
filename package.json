@@ -17,7 +17,8 @@
     "watch": "rollup -wc",
     "debug": "concurrently '0serve -o test.html' 'npm run watch'",
     "preversion": "npm run dist",
-    "start": "concurrently '0serve -o demo/prosemirror.html' 'npm run watch'"
+    "start": "concurrently '0serve -o demo/prosemirror.html' 'npm run watch'",
+    "demo:option-one": "concurrently 'http-server . -p 8080 -c-1' 'npm run watch'"
   },
   "exports": {
     ".": {

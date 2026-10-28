@@ -43,4 +43,13 @@ export default [{
     }),
     commonjs()
   ]
+}, {
+  input: './demo/option-one.js',
+  output: {
+    name: 'optionOne',
+    file: 'demo/dist/option-one.js',
+    format: 'iife',
+    sourcemap: true
+  },
+  plugins: [nodeResolve({ mainFields: ['module', 'browser', 'main'] }), commonjs()]
 }]
