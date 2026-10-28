@@ -27,6 +27,7 @@ import * as convert from './convert.test.js'
 import * as impliedFormatAttribution from './implied-format-attribution.test.js'
 import * as v1Compat from './v1-compat.test.js'
 import * as syncPlugin from './sync-plugin.test.js'
+import * as deletionWidgets from './deletion-widgets.test.js'
 
 import { runTests } from 'lib0/testing'
 import { isBrowser, isNode } from 'lib0/environment'
@@ -72,6 +73,7 @@ if (isBrowser) {
   log.createVConsole(document.body)
 }
 runTests({
+  deletionWidgets,
   cursor,
   delta,
   positions,

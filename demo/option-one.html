@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Option 1 — schema-free deletion widgets</title>
+  <link rel="stylesheet" href="./prosemirror.css">
+  <script src="./dist/option-one.js" defer></script>
+  <style>
+    body { max-width: 1200px; margin: 32px auto; padding: 0 20px; font: 16px system-ui; color: #263238; background: white; }
+    button { margin: 4px; padding: 6px 10px; cursor: pointer; }
+    #editor { border: 1px solid #bbc; margin: 20px 0; }
+    .ProseMirror { padding: 20px; min-height: 180px; }
+    .deleted-card { display: inline; background: #ffe8eb; border: 1px dashed #bd4255; border-radius: 4px; padding: 2px 4px; color: #8b2335; white-space: pre-wrap; }
+    .deleted-card button { font-size: 10px; padding: 1px 4px; }
+    .suggested-insertion { background: #d9f5df; box-shadow: inset 0 -2px #299544; }
+    .suggested-insertion-node { outline: 1px dashed #299544; outline-offset: 2px; }
+    .debug { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    pre { background: #f4f6f8; padding: 16px; overflow: auto; max-height: 550px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Option 1: deletions outside the schema</h1>
+  <p>Edit normally. The editor binds to the suggestion document with <code>renderer: null</code>.
+    A separate DiffRenderer extracts suggestions into plain JSON. Deletions use DOM widgets;
+    insertions use green inline/node decorations. No network or attribution marks.</p>
+  <button id="insert-text">Insert sample text</button>
+  <button id="insert-block">Insert paragraph</button>
+  <button id="delete-word">Delete sample word</button>
+  <button id="delete-block">Delete second paragraph</button>
+  <button id="accept">Accept all</button>
+  <button id="reject">Reject all</button>
+  <button id="reset">Reset fixture</button>
+  <p id="status" role="status"></p>
+  <div id="editor"></div>
+  <div class="debug">
+    <section><h2>Extracted deletions + resolved anchors</h2><pre id="deletions"></pre></section>
+    <section><h2>Insertions + resolved ranges</h2><pre id="insertions"></pre></section>
+    <section><h2>Live PM JSON (no deleted content)</h2><pre id="live-json"></pre></section>
+  </div>
+</body>
+</html>
